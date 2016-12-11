@@ -5,6 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.util.concurrent.TimeUnit;
+
 import static org.testng.Assert.assertTrue;
 
 public class DraftsPage {
@@ -14,48 +20,59 @@ public class DraftsPage {
     int numberOfMails;
     int currentNumberOfMails;
 
+    @FindBy(css = "[gh=tm] .Dj .ts:nth-child(3)")
+    WebElement dreftsMail;
+
+    @FindBy(css = "div[role='main'] tr:first-child div[role='link'] span:first-child")
+    WebElement assertedMail;
+
+    @FindBy(className = "a3q")
+    WebElement dreftsLogin;
+
+    @FindBy(name = "subjectbox")
+    WebElement dreftsTopic;
+
+    @FindBy(className = "editable")
+    WebElement dreftsContents;
+
+    @FindBy(className = "aoO")
+    WebElement sendDrafts;
+
+    @FindBy(css = "[gh=tm] .Dj .ts:nth-child(3)")
+    WebElement drefts3Mail;
+
+
     public DraftsPage(WebDriver driver){
         this.driver=driver;
     };
 
-    public void startPage(String s) {
-        driver.get(s);
-    }
-
-    public void GetNumberOfMailsByCssSelector(String s) {
-        WebElement dreftsMail = driver.findElement(By.cssSelector(s));
+    public void GetNumberOfMails() {
         numberOfMails = Integer.parseInt(dreftsMail.getText());
     }
 
-    public void assertByCSS(String findWhat, String assertWhat) {
-        WebElement dreftsMail = driver.findElement(By.cssSelector(findWhat));
-        assertTrue(dreftsMail.getText().equals(assertWhat));
-        dreftsMail.click();
+    public void assertNumberOfMails( String assertWhat) {
+        assertTrue(assertedMail.getText().equals(assertWhat));
+        assertedMail.click();
     }
 
-    public void assertAttributeByClassName(String findWhat, String fromWhat, String assertWhat) {
-        WebElement dreftsMail = driver.findElement(By.className(findWhat));
-        assertTrue(dreftsMail.getAttribute(fromWhat).equals(assertWhat));
+    public void assertLogin( String assertWhat) {
+        assertTrue(dreftsLogin.getAttribute("email").equals(assertWhat));
     }
 
-    public void assertAttributeByName(String findWhat, String fromWhat, String assertWhat) {
-        WebElement dreftsMail = driver.findElement(By.name(findWhat));
-        assertTrue(dreftsMail.getAttribute(fromWhat).equals(assertWhat));
+    public void assertTopic( String assertWhat) {
+        assertTrue( dreftsTopic.getAttribute("value").equals(assertWhat));
     }
 
-    public void assertTextByClassName(String findWhat, String assertWhat) {
-        WebElement dreftsMail = driver.findElement(By.className(findWhat));
-        assertTrue(dreftsMail.getText().equals(assertWhat));
+    public void assertContents( String assertWhat) {
+        assertTrue(dreftsContents.getText().equals(assertWhat));
     }
 
-    public void findAndClickByClassName(String s) {
-        WebElement dreftsMail = driver.findElement(By.className(s));
-        dreftsMail.click();
+    public void sendFromDrafts() {
+        sendDrafts.click();
     }
 
-    public void assertDraftsNumber(String s) {
+    public void assertDraftsNumber() {
             try{
-                WebElement drefts3Mail = driver.findElement(By.cssSelector(s));
                 currentNumberOfMails= Integer.parseInt(drefts3Mail.getText());
             }
              catch(NoSuchElementException e){
@@ -65,5 +82,25 @@ public class DraftsPage {
 
             System.out.println("Количество черновиков До отправки \""   +numberOfMails+"\"");
             System.out.println("Количество черновиков После отправки \""+currentNumberOfMails+"\"");
+    }
+
+    public void waitForClassName() {
+        WebDriverWait wait = new WebDriverWait(driver, 10);
+        WebElement waitElement = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.className("y6")));
+    }
+
+    public void waitForName() {
+        WebDriverWait wait = new WebDriverWait(driver, 30);
+        WebElement waitElement = wait.until(
+                ExpectedConditions.visibilityOfElementLocated(By.name("subjectbox")));
+    }
+
+    public void waitForIt() {
+        try {
+            TimeUnit.SECONDS.sleep(5);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 }
