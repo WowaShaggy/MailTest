@@ -83,7 +83,7 @@ public class MainTests {
 
         LogOut logOut = PageFactory.initElements(driver, LogOut.class);
          logOut.findButton();
-         logOut.leaveAccaunt();
+         logOut.leaveAccount();
     }
 }
 

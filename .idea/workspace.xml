@@ -2,22 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5e1c0fc9-2d65-4887-9758-279165aec8ea" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/automated/mailTest/ExpectationAndSearch.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/automated/mailTest/ExpectationAndSearch.class" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/automated/mailTest/DraftsPage.class" afterPath="$PROJECT_DIR$/target/classes/automated/mailTest/DraftsPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/automated/mailTest/LoginPage.class" afterPath="$PROJECT_DIR$/target/classes/automated/mailTest/LoginPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/automated/mailTest/MailPage.class" afterPath="$PROJECT_DIR$/target/classes/automated/mailTest/MailPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/automated/mailTest/PasswordPage.class" afterPath="$PROJECT_DIR$/target/classes/automated/mailTest/PasswordPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/automated/mailTest/SentPage.class" afterPath="$PROJECT_DIR$/target/classes/automated/mailTest/SentPage.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/automated/mailTest/MainTests.class" afterPath="$PROJECT_DIR$/target/test-classes/automated/mailTest/MainTests.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/automated/mailTest/DraftsPage.java" afterPath="$PROJECT_DIR$/src/main/java/automated/mailTest/DraftsPage.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/automated/mailTest/Data.java" afterPath="$PROJECT_DIR$/src/main/java/automated/mailTest/Data.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/automated/mailTest/LogOut.java" afterPath="$PROJECT_DIR$/src/main/java/automated/mailTest/LogOut.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/automated/mailTest/LoginPage.java" afterPath="$PROJECT_DIR$/src/main/java/automated/mailTest/LoginPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/automated/mailTest/MailPage.java" afterPath="$PROJECT_DIR$/src/main/java/automated/mailTest/MailPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/automated/mailTest/PasswordPage.java" afterPath="$PROJECT_DIR$/src/main/java/automated/mailTest/PasswordPage.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/automated/mailTest/SentPage.java" afterPath="$PROJECT_DIR$/src/main/java/automated/mailTest/SentPage.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/automated/mailTest/MainTests.java" afterPath="$PROJECT_DIR$/src/test/java/automated/mailTest/MainTests.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -41,11 +27,31 @@
       <file leaf-file-name="MainTests.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/automated/mailTest/MainTests.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
-              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+            <state relative-caret-position="289">
+              <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Data.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/automated/mailTest/Data.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="17" column="66" lean-forward="false" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogOut.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/automated/mailTest/LogOut.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -71,7 +77,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/main/java/automated/mailTest/ExpectationAndSearch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/automated/mailTest/Data.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/../MainTests alpha.java" />
         <option value="$PROJECT_DIR$/src/main/java/automated/mailTest/LoginPage.java" />
@@ -79,8 +84,9 @@
         <option value="$PROJECT_DIR$/src/main/java/automated/mailTest/MailPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/automated/mailTest/DraftsPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/automated/mailTest/SentPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/automated/mailTest/LogOut.java" />
         <option value="$PROJECT_DIR$/src/test/java/automated/mailTest/MainTests.java" />
+        <option value="$PROJECT_DIR$/src/main/java/automated/mailTest/LogOut.java" />
+        <option value="$PROJECT_DIR$/src/main/java/automated/mailTest/Data.java" />
       </list>
     </option>
   </component>
@@ -584,11 +590,8 @@
     <history-entry file="MainTests - 2016.12.11 at 12h 55m 42s.xml">
       <configuration name="MainTests" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="MainTests_EmailTest - 2016.12.11 at 12h 25m 14s.xml">
-      <configuration name="MainTests.EmailTest" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="MainTests_EmailTest - 2016.12.11 at 12h 30m 01s.xml">
-      <configuration name="MainTests.EmailTest" configurationId="TestNG" />
+    <history-entry file="MainTests - 2016.12.11 at 13h 14m 00s.xml">
+      <configuration name="MainTests" configurationId="TestNG" />
     </history-entry>
     <history-entry file="MainTests_EmailTest - 2016.12.11 at 12h 32m 01s.xml">
       <configuration name="MainTests.EmailTest" configurationId="TestNG" />
@@ -611,10 +614,13 @@
     <history-entry file="MainTests_EmailTest - 2016.12.11 at 13h 07m 29s.xml">
       <configuration name="MainTests.EmailTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="MainTests_EmailTest - 2016.12.11 at 13h 21m 07s.xml">
+      <configuration name="MainTests.EmailTest" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-4" y="0" width="1691" height="1017" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -877,14 +883,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/automated/mailTest/Data.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="104" lean-forward="false" selection-start-line="18" selection-start-column="104" selection-end-line="18" selection-end-column="104" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/MailTest.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -987,23 +985,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/automated/mailTest/LogOut.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="28" lean-forward="true" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-          <folding>
-            <element signature="e#362#363#0" expanded="true" />
-            <element signature="e#396#397#0" expanded="true" />
-            <element signature="e#429#430#0" expanded="true" />
-            <element signature="e#458#459#0" expanded="true" />
-            <element signature="e#492#493#0" expanded="true" />
-            <element signature="e#521#522#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="340">
+          <caret line="28" column="0" lean-forward="true" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/automated/mailTest/Data.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="66" lean-forward="false" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/automated/mailTest/MainTests.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="26" lean-forward="true" selection-start-line="17" selection-start-column="26" selection-end-line="17" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -22,7 +22,7 @@ public class LogOut {
        button.click();
     }
 
-    public void leaveAccaunt() {
+    public void leaveAccount() {
         leave.click();
     }
 }
